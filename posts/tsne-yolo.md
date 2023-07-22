@@ -80,4 +80,4 @@ Type: <class 'torch.Tensor'>, Value: tensor([[[[ 1.4882e+01,  2.0230e+01,  2.082
 ## YOLOv8 Model Structure
 ![YOLOv8 model architecture](https://user-images.githubusercontent.com/27466624/239739723-57391d0f-1848-4388-9f30-88c2fb79233f.jpg)
 ## Feature Extraction: `SPPF` Stage
-![SPPF_Stage_9](images/stage9_SPPF_features.png)
+![SPPF_Stage_9](/images/stage9_SPPF_features.png)
