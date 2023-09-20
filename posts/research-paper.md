@@ -115,6 +115,10 @@ The significance of their software has allowed the ultralytics team to call thei
 # Analysis
 ![Object Feature Extraction T-SNE Result](/images/improve_tsne.png)
 
+The outcome for t-SNE is illustrated above.
+The obvious overlap is between Object A and Object B.
+The overlap occurs at least 3 times.
+
 # Discussion
 
 # References
