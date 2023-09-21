@@ -100,14 +100,16 @@ This would describe how many allocated memory is used.
 The software used for this experiment is by Ultralytics Team.
 The software has been modified over the course of years.
 The service it provide allows numerous users to learn about its product.
-The significance of their software has allowed the ultralytics team to call their software **State-Of-The-Art (SOTA)**
+The significance of their software has allowed the ultralytics team to call their software **State-Of-The-Art (SOTA)**.
+
 
 ## Attack Workflow
 
 ## Backbone Model and Dataset
 ### Backbone Model
-
 ![YOLOv8 Architecture Provided By Github User RangeKing](/images/yolo_architecture.jpg)
+
+
 ### Dataset
 The dataset we choose was the Berkeley Deep Drive Dataset.
 The dataset contains a significant amount of dataset.
