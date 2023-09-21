@@ -109,6 +109,15 @@ The significance of their software has allowed the ultralytics team to call thei
 
 ![YOLOv8 Architecture Provided By Github User RangeKing](/images/yolo_architecture.jpg)
 ### Dataset
+The dataset we choose was the Berkeley Deep Drive Dataset.
+The dataset contains a significant amount of dataset.
+Their dataset consists of videos and images.
+Additionally, the media is seperated for various tasks.
+
+We are using segmentation which corresponds to BDD10k dataset.
+The BDD10k dataset contains 10 thousands images.
+Furthermore, it is separated into 3 pieces: training, validation, and testing.
+The ratio regarding the separation is 7:2:1, respectively.
 
 ### Model Evaluation
 
