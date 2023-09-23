@@ -183,4 +183,3 @@ The significance of this outcome allows us to draw conclusion as their respectiv
 # Discussion
 There were various challenged faced as the research project ventured.
 The first is model accuracy.
-The expected mAP score is roughly 40 but
