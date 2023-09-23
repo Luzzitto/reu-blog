@@ -129,7 +129,6 @@ They are general functions necessary to execute YOLO models.
 
 ## Backbone Model and Dataset
 ### Backbone Model
-
 ![YOLOv8 Architecture Provided By Github User RangeKing](/images/yolo_architecture.jpg)
 
 The Ultralytics Team has yet to publish their research paper for YOLOv8.
