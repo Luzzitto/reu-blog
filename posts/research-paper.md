@@ -126,6 +126,18 @@ The remaining program are described by their name.
 They are general functions necessary to execute YOLO models.
 
 ## Attack Workflow
+The *Composite Backdoor Attack* introduce a trojan model that activates on a specific condition.
+Their example shows falsely identifying a person through the representation of distinct faces.
+When the two faces are present, the classification model infer the input as another entity, completely different from the input.
+
+The dataset of the model has 3 parts: benign, mixed, and poisoned.
+The benign dataset are images where there is only a singular entity present. These are the images that has not been modified.
+The second part is mixed dataset.
+The mixed dataset consists of one entity mixed around the dataset.
+The first image is integrated into the last image and vice versa.
+This happends to all of the dataset and as a result, the images are now integrated with two faces of one person.
+Finally, the poisoned dataset contains the mixture of two people and is labeled as a different class. A single image contains two faces with different people, compared to the mixed dataset where the mixture is only one.
+The mixed dataset is created to pose the poisoned dataset as acceptable since the mixed dataset is present.
 
 ## Backbone Model and Dataset
 ### Backbone Model
@@ -167,9 +179,7 @@ The ratio regarding the separation is 7:2:1, respectively.
 The evaluation method used by YOLO is mAP, or mean Average Precision.
 A mixture of methods consists the mAP.
 The mAP score ranges from 0 to 1, where 1 is the highest.
-The YOLO segmentation extra model has a mAP score of 43.4 or 0.434, in masking.
-
-The mAP score of our model is 32.2. Our custom trained model is above than the nano YOLO segmentation model with 30.5 in mask.
+The YOLO segmentation extra model has a mAP score of 43.4 or 0.434, in masking. The mAP score of our model is 32.2. Our custom trained model is above than the nano YOLO segmentation model with 30.5 in mask.
 
 # Analysis
 ![Object Feature Extraction T-SNE Result](/images/improve_tsne.png)
@@ -179,7 +189,8 @@ The apparent overlap is between **banners** and **traffic signs**.
 The overlap occurs at least 3 times.
 The significance of this outcome allows us to draw conclusion as their respective description shows a similarity (see Images below).
 Their similarity is best describe by their respective shape.
-However, there are more overlaps that pose significance but ignore due to 
+However, there are more overlaps that pose significance but are ignore due to poor visualization.
+We emphasize on the greatest overlap to attain the most possibility of misclassification.
 
 ## Images
 ### Banner
@@ -189,10 +200,13 @@ However, there are more overlaps that pose significance but ignore due to
 
 
 # Discussion
-The result of t-SNE was mediocre.
-We believe the result was affected with various factors.
-The first is mAP score.
-Dataset for t-SNE
+Our goal with the t-SNE result is to create composite attacks using crops of various objects to establish a poisoned dataset. 
+To generate this dataset, we overlay cropped objects with solid bonds in t-SNE, which indicates that the model perceives them as similar. 
+This will cause the model to misclassify the objects when presented with them. 
+While the traditional method of generating datasets is manual data crafting, we can use the BDD dataset to crop objects with polygon information and overlap them, which allows for easier dataset generation. 
+We will train the model with and without the poisoned dataset to compare its accuracy using mAP. 
+Additionally, we will create a separate dataset to determine the percentage of overlay required for the model to misclassify the objects, which will extend the Composite Backdoor Attack.
+
  
 
  
