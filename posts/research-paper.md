@@ -175,11 +175,24 @@ The mAP score of our model is 32.2. Our custom trained model is above than the n
 ![Object Feature Extraction T-SNE Result](/images/improve_tsne.png)
 
 The outcome for t-SNE is illustrated above.
-The obvious overlap is between Object A and Object B.
+The apparent overlap is between **banners** and **traffic signs**.
 The overlap occurs at least 3 times.
-The significance of this outcome allows us to draw conclusion as their respective description shows a similarity.
+The significance of this outcome allows us to draw conclusion as their respective description shows a similarity (see Images below).
+Their similarity is best describe by their respective shape.
+However, there are more overlaps that pose significance but ignore due to 
+
+## Images
+### Banner
+![banner](/images/banner.jpg)
+### Traffic Sign
+![traffic_sign](/images/traffic_sign.jpg)
 
 
 # Discussion
-There were various challenged faced as the research project ventured.
-The first is model accuracy.
+The result of t-SNE was mediocre.
+We believe the result was affected with various factors.
+The first is mAP score.
+Dataset for t-SNE
+ 
+
+ 
