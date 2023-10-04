@@ -12,7 +12,13 @@ Previous Slurm
 New Slurm
 ![new_slurm.png](/images/new_slurm.png)
 
-## 2. Model Evaluation
+## 2. Code Modification
+Previous Code
+![code_previous.png](/images/code_previous.png)
+New Code
+![code_new.png](/images/code_new.png)
+
+## 3. Model Evaluation
 `/home/ltupa001/research/w6/train_model`
 
 | Class         | Images | Instances | Box(P | R     | mAP50   | mAP50-95) | Mask(P | R      | mAP50   | mAP50-95) |
@@ -70,7 +76,7 @@ New Slurm
 | train      | 1000   | 7         | 1     | 0     | 0.00522 | 0.00358   | 1      | 0     | 0.00532 | 0.00387   |
 | truck      | 1000   | 520       | 0.683 | 0.46  | 0.566   | 0.46      | 0.692  | 0.448 | 0.555   | 0.386     |
 
-## 3. Model Training Output
+## 4. Model Training Output
 `/home/ltupa001/research/w6/train_model`
 
 ** Unavailable **
