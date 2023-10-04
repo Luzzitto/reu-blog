@@ -79,7 +79,7 @@ New Code
 ## 4. Model Training Output
 `/home/ltupa001/research/w6/train_model`
 
-** Unavailable **
+![hpc_reu_results.png](/images/hpc_reu_results.png)
 
 `/home/ltupa001/repo/composite-backdoor-percentage`
 ![clean_model_hpc_results.png](/images/clean_model_hpc_results.png)
